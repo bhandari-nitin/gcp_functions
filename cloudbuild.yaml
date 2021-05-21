@@ -1,4 +1,4 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', '${_CF_NAME}', '--trigger-http', '--entry-point', 'main', '--runtime', 'python38', '--allow-unauthenticated']
-  dir: 'webhook/main'
+  dir: 'gcp_func/main'
